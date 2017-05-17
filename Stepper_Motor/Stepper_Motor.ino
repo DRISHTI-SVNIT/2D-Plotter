@@ -5,7 +5,7 @@
 
 #define step_x 2                         
 
-#define dir_x 3
+#define dir_x 5
 
 #define enable 8
 
@@ -43,11 +43,8 @@ void pulsex(int stepx)
 void setup() 
 {
   pinMode(step_x,OUTPUT);
-  
   pinMode(dir_x,OUTPUT);
-  
   pinMode(enable,OUTPUT);
-  
   Serial.begin(57600);
 }
 
