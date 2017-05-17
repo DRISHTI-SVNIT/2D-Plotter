@@ -6,13 +6,13 @@ void setup()
 {
   pinMode(STEP, OUTPUT);
   pinMode(DIR, OUTPUT);
-  digitalWrite(DIR, LOW);
   Serial.begin(9600);
 }
 
 void loop()
 {
   int i;
+  digitalWrite(DIR,HIGH);
   for (i = 0; i < 200; ++i)
   {
     digitalWrite(STEP, HIGH);
