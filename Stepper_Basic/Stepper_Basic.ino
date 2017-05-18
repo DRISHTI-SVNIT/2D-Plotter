@@ -25,8 +25,8 @@ void loop()
   for(i=0;i<200;++i)
   {
     digitalWrite(STEP,HIGH);
-    delayMicroseconds(1000);
+    delayMicroseconds(500);
     digitalWrite(STEP,LOW);
-    delayMicroseconds(1000);
+    delayMicroseconds(500);
   }
 }
